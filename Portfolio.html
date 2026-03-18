@@ -1688,7 +1688,7 @@ button { border: none; cursor: pointer; font-family: inherit; }
 
 <!-- Navigation -->
 <nav class="nav" id="nav">
-  <a href="#" class="nav-logo">Avinash.</a>
+  <a href="#" id="scrollTopBtn" class="nav-logo">Avinash.</a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -2249,6 +2249,18 @@ button { border: none; cursor: pointer; font-family: inherit; }
      JAVASCRIPT
      ═══════════════════════════════════════════════════ -->
 <script>
+
+  const btn = document.getElementById("scrollTopBtn");
+
+  // Scroll to top
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+
 // ── LOADER ──
 window.addEventListener('load', () => {
   setTimeout(() => {
